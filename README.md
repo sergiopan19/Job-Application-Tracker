@@ -19,9 +19,9 @@ This app was made with local-first development in mind with the intention of int
 
 ```mermaid
 flowchart TD
-    UI[Frontend UI\n(Tables, Forms, Filters)]
-    BE[Rust Backend\n(Tauri Commands, Validation, Command Handlers)]
-    DB[(SQLite Database)]
+    UI["Frontend UI<br/>(Tables, Forms, Filters)"]
+    BE["Rust Backend<br/>(Tauri Commands, Validation, Command Handlers)"]
+    DB["SQLite Database"]
 
     UI -->|invoke| BE
     BE -->|SQL queries| DB
