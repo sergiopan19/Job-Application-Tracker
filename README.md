@@ -17,6 +17,7 @@ During my job searches, I tracked job applications using apps like Google Sheets
 ## Architecture Overview
 This app was made with local-first development in mind with the intention of integrating an external app interface eventually. 
 
+```mermaid
 flowchart TD
     UI[Frontend UI\n(Tables, Forms, Filters)]
     BE[Rust Backend\n(Tauri Commands, Validation, Command Handlers)]
@@ -24,6 +25,7 @@ flowchart TD
 
     UI -->|invoke| BE
     BE -->|SQL queries| DB
+```
 
 ## Data Model
 ### Application
